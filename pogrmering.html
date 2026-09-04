@@ -8,17 +8,45 @@
 <body>
   <script src="http://koda.nu/simple.js">
     
-    rectangle(10, 20, 400, 250, "red"); 
-    circle(20, 50, 150, "yellow");
-    triangle(100, 20, 180, 100, 60, 80, "green");
+   var player = { x: 50, y: 200, size: 40, color: "blue", speed: 3 };
+   var enemy = { x: 100, y: 1000, size: 40, color: "red", speed: 3 };
+
+
+   function update() {
+    clearScreen()
+    circle (player.x, player.y, player.size, player.color);
+    player.x = player.x + player.speed;
+
+    rectangle(enemy.x, enemy.y, enemy.bredd, enemy.hojd, enemy.color)
     
     
+    enemy.x = enemy.x + enemy.speedX * enemy.directionX
+    enemy.y = enemy.y + enemy.speedY * enemy.directionY
+   
+  
+  
+  
+  
+  
+  
+  
+  }
+
+    //1. clearScrenn rensaer alltid bort skärmen när man ta bort den så blir den en låg blå linje.
+    //2. den går på modsads hållet.
+    //3.  endra storlektn ocg färjen.
     
-    
-    
-    
-    
-    
+    var enemy = {
+        x: 100,
+        y: 100,
+        bredd: 50,
+        hojd: 50,
+        color: "red",
+        speedX: 5,
+        speedY: 0,
+        directionX: 1,
+        directionY: 1
+    }
     
     
     
