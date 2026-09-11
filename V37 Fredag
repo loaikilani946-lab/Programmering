@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Intro</title>
+</head>
+<body>
+  <script src="http://koda.nu/simple.js">
+    
+
+    var player = { x: 50, size: 40, color: "blue", speedX: 3, speedY: 2, direction: 1, directionY: 1 };
+    
+    function update() {
+        clearScreen();
+        circle(player.x, player.y, player.zize, player.color);
+        player.x = player.x + player.speedX * player.direction;
+        player.y = player.y + player.speedY * player.directionY;
+
+
+        if (player.x + player.size > tolalWidth) {
+            player.direction = -1;
+        }
+        if (player.x + player.size < 0) {
+            player.direction = 1;
+        }
+        if (player.y - player.size < 0 ) {
+            player.direction = 1; 
+        }
+        // studsa mot nederkant - saknas ! 
+    }
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>
