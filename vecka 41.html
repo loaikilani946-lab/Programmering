@@ -8,11 +8,16 @@
 <body>
   <script src="http://koda.nu/simple.js">
     // Skriv din kod här
+    try {
+  nagotSomInteFinns();
+} catch (fel) {
+  console.log("Fångade ett fel: " + fel.message);
+}
 var player = { x: 100, y: 300, size: 20, color: "blue", speed: 4 };
 
 var zombie1 = { x: 300, y: 220, speed: 2 };
 var zombie2 = { x: 500, y: 400, speed: 3 };
-var zombie3 = { x: 700, y: 260 };
+var zombie3 = { x: 700, y: 260, speed: 4 };
 var poang = 0;
 
 function drawZombie(x, y) {
@@ -91,15 +96,24 @@ function update() {
   } else {
     poang = poang + 1;
   }
+if (zombie3.x < player.x) {
+    zombie3.x = zombie3.x + zombie3.speed;
+  }
+  if (zombie3.x > player.x) {
+    zombie3.x = zombie3.x - zombie3.speed;
+  }
+  if (zombie3.y < player.y) {
+    zombie3.y = zombie3.y + zombie3.speed;
+  }
+  if (zombie3.y > player.y) {
+    zombie3.y = zombie3.y - zombie3.speed;
+  }
 
-
-
-
-
-
-
-
-
+if (distance(player, zombie3) < 65) {
+    text(280, 250, 50, "GAME OVER", "red");
+    stopUpdate();
+  } else {
+    poang = poang + 1;
 
  }
 
@@ -119,7 +133,7 @@ function update() {
 
 
 
-
+}
 
   </script>
 </body>
