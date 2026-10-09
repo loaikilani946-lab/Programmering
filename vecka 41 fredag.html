@@ -13,8 +13,7 @@
 //     console.log("Jag är " + i + " år")
 //     i += 1
 // }
-
-
+var a = prompt("hur många")
 
 var player = { x: 100, y: 300, size: 20, color: "blue", speed: 4 };
 
@@ -101,16 +100,35 @@ function update() {
 
   // STEG: vågen kommer här
   var i = 0;
-    while (i < 7) {
-    var vagX = 130 + i * 180;
-    drawZombie(vagX, 550);
+    while (i < a) {
+    var vagX = 130 + i * (totalWidth - 200) / (a - 1);
+    drawZombie(vagX, 550 + random(-10 * 10) * i)
     if (distance(player.x, player.y, vagX, 550) < 65) {
         text(280, 250, 50, "GAME OVER", "red");
         stopUpdate();
     }
     i += 1;
 }
+
+var j = 0;
+while (j < a) {
+    var vagX = 130 + j * (totalWidth - 200) / (a - 1);
+    drawZombie(vagX, 150);
+    if (distance(player.x, player.y, vagX, 150) < 65) {
+        text(280, 250, 50, "GAME OVER", "red")
+        stopUpdate();
+    }
+
+    j += 1;
 }
+
+
+
+
+
+
+}
+
 
 
 
