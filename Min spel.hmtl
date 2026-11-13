@@ -22,19 +22,21 @@
 
 // --- MITT KRAV (måste finnas) ---
 // Antal spelare:Ett
-// Antal fiender/hinder:
-// Mål (hur vinner/klarar man spelet?):
-// Förlustvillkor (hur förlorar man?):
+// Antal fiender/hinder:Många zombies
+// Mål (hur vinner/klarar man spelet?):Döda zombies och samla så många tjärnor som möjligt. 
+// Förlustvillkor (hur förlorar man?):Om en zomies träffar spelaren och alla liv tar slut förlorar man.
 
 // --- MIN REKOMMENDATION (bör finnas) ---
-// 1.
-// 2.
+// 1.Spelaren ska kunna röra sig med piltangenterna. 
+// 2.Man ska kunna skjuta zombies med mellanalag.
 
 // --- MIN UTMANING (kan finnas, om tid finns) ---
-// 1.
-// 2.
+// 1.Göra klart spelet i tid och göra att zombies blir snabbare.
+// 2.Lägga till fler nivåer i spelet.
 
 // --- FÖRBÄTTRINGAR ATT GÖRA SEN ---
 // (Lägg till fler idéer här under hela projektet.
 //  Känner du dig klar med allt ovan? Kolla den här listan och börja på nästa.)
-//
+// Jag vill lägga rill fler zombjïes.
+// Jag  vill göra bakgrund finare.
+// jag vill lägga till fler liv och kanska nya vapen.
