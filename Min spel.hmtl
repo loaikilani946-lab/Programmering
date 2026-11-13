@@ -1,10 +1,40 @@
-// Jag valde mörkblå bakgrund och vit text.
-// Jag gjorde så eftersom texten syns tydligare
-// Jag använder piltangenterna för att flytta spelaren.
+// Jag valde mörk bakgrund och ljusa färger.
+// Jag vill att spelaren och zombierna ska syns tydligt.
 // Det gör spelet lättare att spela.
-// Mitt spel är gjort för nybörjatr och personer som gillar enkla spel.
-// Spelet ska vara lätt att förstå och roligt att spela.
-// Målet är att samla så många stjärnor som möjligt.
-//Mitt spel är ett zombieöverlevnadsspel.
-// Det är gjort för personer som gillar action och rolig spel.
-// spelaren ska överleva och döda så många zombies som möjligt.
+// Jag använder piltangenterna för att flytta spelaren.
+// Jag använder mellanalag för att skjuta zombies. 
+// Det gör att man kan spela utan mus.
+// Det är till för personer som gillar roliga actionspel.
+// Man ska försöka överleva och döda aå många zombies som möjligt.
+// Varje gång man döda en zomie får man en tjärna.
+// Målet är att samla många tjärnor och få hög poäng
+
+
+// ===== MIN PROJEKTPLAN =====
+// Spelidé: (skriv en kort beskrivning, 2-4 meningar)
+//Jag vill skapa ett spel där man är en spelare som skall unvika Zombies. Det skall finnas poäng i form av sjärnong som man kan plocka uipp och få poäng med. 
+
+// --- SAKER JAG VILL ÖVA PÅ (utifrån tidigare feedback) ---
+// (Vad har du fått feedback om tidigare som du vill bli bättre på,
+//  eller något du aldrig hann klart med? Skriv in det här och se till
+//  att du övar på det i ditt spel under projektet.)
+// 1.
+
+// --- MITT KRAV (måste finnas) ---
+// Antal spelare:Ett
+// Antal fiender/hinder:
+// Mål (hur vinner/klarar man spelet?):
+// Förlustvillkor (hur förlorar man?):
+
+// --- MIN REKOMMENDATION (bör finnas) ---
+// 1.
+// 2.
+
+// --- MIN UTMANING (kan finnas, om tid finns) ---
+// 1.
+// 2.
+
+// --- FÖRBÄTTRINGAR ATT GÖRA SEN ---
+// (Lägg till fler idéer här under hela projektet.
+//  Känner du dig klar med allt ovan? Kolla den här listan och börja på nästa.)
+//
