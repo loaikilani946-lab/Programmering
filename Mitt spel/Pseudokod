@@ -1,0 +1,13 @@
+// Starta spelet
+// Skapa spelaren
+// Skapa 15 zombies
+// Sätt spelarens liv till 3
+// Sätt poäng till 0
+// När spelet uppdateras
+// Flytta spelaren med piltangenterna
+// Om mellanslag trycks så skjuter man
+//Flytta zombies mot spelaren
+// om ett skott träffar en zombie så ta bort zombien.
+// Öker poängen med 1 GE spelaren en tjärna
+// Om en zombie träffar spelaren så minska spelarens liv med 1
+// Om spelarens liv är 0 så visa game over

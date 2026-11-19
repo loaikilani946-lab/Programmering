@@ -7,7 +7,26 @@
 </head>
 <body>
   <script src="http://koda.nu/simple.js">
-    // Skriv din kod här
+    
+    var playerX = 400;
+    var playerY = 300;
+
+    function update(){
+        fill("black");
+        circle(playerX, playerY, 20, "lime");
+        if (keyboard.right){
+            playerX = playerX + 5;
+        }
+
+        if (keyboard.left) {
+            playerX = playerX - 5;
+        }
+
+
+
+
+
+    }
   
 
 
