@@ -11,9 +11,52 @@
     var playerX = 400;
     var playerY = 300;
 
+    var zombieX = 100;
+    var zombieY = 100;
+
+    
+
     function update(){
         fill("black");
+        if(playerX < 20) {
+            playerX = 20;
+        }
+
+        if (playerX > totalWidth - 20) {
+            playerX = totalWidth - 20;
+        }
+
+        if (playerY < 20) {
+            playerY = 20;
+        }
+
+        if(playerY > totalHeight - 20) {
+            playerY = totalHeight - 20;
+        }
+
+
+        if (zombieX < playerX) {
+        zombieX = zombieX + 1;
+    }
+
+    if (zombieX > playerX) {
+        zombieX = zombieX - 1;
+    }
+
+    if (zombieY < playerY) {
+        zombieY = zombieY + 1;
+    }
+
+    if (zombieY > playerY) {
+        zombieY = zombieY - 1;
+    }
+    var lives = 3;
+    text(20, 40, 30, "Liv:" + lives, "white");
+
+
         circle(playerX, playerY, 20, "lime");
+        circle(zombieX, zombieY, 20, "red");
+
         if (keyboard.right){
             playerX = playerX + 5;
         }
@@ -21,6 +64,16 @@
         if (keyboard.left) {
             playerX = playerX - 5;
         }
+
+        if(keyboard.up) {
+            playerY = playerY - 5;
+        }
+
+        if (keyboard.down) {
+            playerY = playerY + 5;
+        }
+
+        
 
 
 
