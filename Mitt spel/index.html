@@ -7,21 +7,25 @@
 </head>
 <body>
   <script src="http://koda.nu/simple.js">
-    
+    // variabler
     var playerX = 400;
     var playerY = 300;
 
     var zombieX = 100;
     var zombieY = 100;
+    
+    var zombieHit = false;
+    var lives = 3;
 
     
-
+    //Funktionen update kör spelets uppdateringar och logik
     function update(){
         fill("black");
         if(playerX < 20) {
             playerX = 20;
         }
 
+         // Håller spelaren inom skärmens gränser
         if (playerX > totalWidth - 20) {
             playerX = totalWidth - 20;
         }
@@ -35,6 +39,7 @@
         }
 
 
+        //Gör att zombien följer efter spelaren
         if (zombieX < playerX) {
         zombieX = zombieX + 1;
     }
@@ -50,13 +55,33 @@
     if (zombieY > playerY) {
         zombieY = zombieY - 1;
     }
-    var lives = 3;
+     // Kontrollerar om zombien träffar spelare
+     // Minskar spelarens liv  när zombien träffar
+    if (distance(playerX, playerY, zombieX, zombieY) < 40 && zombieHit == false && lives > 0) {
+        lives = lives -1;
+        zombieHit = true;
+
+        zombieX = 100;
+        zombieY = 100;
+
+        zombieHit = false;
+    }
+     if (distance(playerX, playerY, zombieX, zombieY) > 40) {
+
+     }
+    if (lives <= 0) {
+        text(totalWidth / 2, totalHeight / 2, 50, "GAME OVER", "red");
+    }
+      // Visar spelarens antal liv
+     // var lives = 3;
     text(20, 40, 30, "Liv:" + lives, "white");
 
-
+    // Ritar spelaren och zombien
         circle(playerX, playerY, 20, "lime");
         circle(zombieX, zombieY, 20, "red");
 
+        // Movement
+        // Kontrollerar spelarens rörelse med piltangentarena
         if (keyboard.right){
             playerX = playerX + 5;
         }
